@@ -1,11 +1,15 @@
 ﻿// data_structures.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
-#include <iostream>
+#include <iostream>	// stdio.h 대신에 C++ 표준 입출력 헤더 파일
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	cout << sizeof(int) << " " << sizeof(int*) << endl;	// printf("%d %d\n", sizeof(int), sizeof(int*));
+	cout << sizeof(char) << " " << sizeof(char*) << endl;
+	cout << sizeof(double) << " " << sizeof(double*) << endl; 
+	return 0;
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
