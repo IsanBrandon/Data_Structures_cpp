@@ -23,10 +23,10 @@ Point2D computeCenter(Point2D* pts, int k) {
 	Point2D c;
 	c.x = c.y = 0;
 	for (int i = 0; i < k; i++) {
-		c.x += (*(pts + i)).x;
+		c.x += (*(pts + i)).x;	// c.x += pts[i].x;
 		c.y += (pts + i)->y;
 	}
 	c.x /= k;
 	c.y /= k;
 	return c;
-}
+}  
