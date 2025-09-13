@@ -34,9 +34,12 @@ int main() {
 
     // 저장된 단어 출력
     cout << "저장된 단어들:" << endl;
-    for (const auto& w : words) {
-        cout << w << endl;
+    for (const auto& w : words) {   // auto: compiler가 type을 자동 추론 (words는 vector<string>이므로 원소 타입은 string입니다. 따라서 w의 타입은 const string&으로 추론됩니다.)
+        cout << w << endl;          // 원소를 복사하지 않고 참조로 접근합니다. → 성능적으로 유리합니다.
     }
+
+    // words 벡터의 모든 원소(string)를 하나씩 꺼내와서 참조로 변수 w에 담고, 그 값을 출력한다.
+    // 복사 대신 참조(&)를 쓰고, 수정 방지를 위해 const를 붙인 코드라서 안전하고 효율적입니다.
 
     return 0; 
 }
