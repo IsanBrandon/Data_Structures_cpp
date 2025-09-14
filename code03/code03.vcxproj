@@ -24,6 +24,7 @@
     <ProjectGuid>{0fd6c501-387b-436d-be9d-716bd853f6fd}</ProjectGuid>
     <RootNamespace>code03</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>cpp03_Point2D</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
