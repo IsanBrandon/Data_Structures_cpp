@@ -28,7 +28,7 @@ int main() {
 	double* stddev = new double(0);
 
 	// 최소, 최대, 합 계산
-	for (int i = 0; i < *num; i++) {
+	\for (int i = 0; i < *num; i++) {
 		if (*(arr + i) < *minVal) *minVal = *(arr + i);
 		if (*(arr + i) > *maxVal) *maxVal = *(arr + i);
 		*avg += *(arr + i);
@@ -45,7 +45,7 @@ int main() {
 	*stddev = sqrt(*stddev / *num);
 
 	// 결과 출력
-	cout << *minVal << " " << *maxVal << " " << * avg << " " << * stddev << endl;
+	cout << *minVal << " " << *maxVal << " " << *avg << " " << *stddev << endl;
 
 	// 동적 메모리 해제
 	delete num;

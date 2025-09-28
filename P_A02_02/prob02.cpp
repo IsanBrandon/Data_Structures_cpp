@@ -1,0 +1,35 @@
+#include <iostream>  
+#include <vector>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	if (n < 2) return 0;	// 2 미만이면 소수 없음
+	
+	vector<int> nums;
+	for (int i = 2; i <= n; i++) nums.push_back(i);
+
+	for (auto it = nums.begin(); it != nums.end(); ++it) {
+		int p = *it;
+		if (p * p > n) break;
+
+		auto jt = it;
+		++jt;	// 소수가 삭제되는 것을 방지하기 위해 다음 번 숫자부터 체킹
+		while (jt != nums.end()) {
+			if (*jt % p == 0) {
+				jt = nums.erase(jt);
+			}
+			else {
+				++jt;
+			}
+		}
+
+	}
+
+	for (auto element : nums)
+		cout << element << " ";
+
+	return 0;
+}
+
