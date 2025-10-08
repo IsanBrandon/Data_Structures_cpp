@@ -20,7 +20,7 @@ int main() {
 		
 		if (it != words.end()) words.erase(it);
 		else words.push_back(input);
-
+		
 		sort(words.begin(), words.end());	// 오름차순 (사전순) 정렬
 
 		for (auto& w : words) cout << w << " ";
@@ -29,3 +29,7 @@ int main() {
 
 	return 0;
 }
+
+
+
+

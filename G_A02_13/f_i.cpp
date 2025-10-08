@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	vector<int> my_vec = { 1, 3, 1, 4, 4, 6, 5, 6, 6 };
+	]vector<int> my_vec = { 1, 3, 1, 4, 4, 6, 5, 6, 6 };
 	sort(my_vec.begin(), my_vec.end());	// [begin, end) 오름차순 정렬
 	for (int item : my_vec)
 		cout << item << " ";

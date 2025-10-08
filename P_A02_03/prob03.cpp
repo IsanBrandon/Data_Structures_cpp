@@ -65,7 +65,7 @@ void load_data(string file_name) {
 }
 
 // 선형 탐색으로 단어 찾기 (없으면 -1)
-int find_word_index(const string& key) {
+int search_word_index(const string& key) {
 	for (int i = 0; i < (int)directory.size(); ++i) {
 		if (directory[i].letters == key) return i;
 	}
@@ -90,16 +90,15 @@ void list_directory() {
 }
 
 int main() {
-	ios::sync_with_stdio(false);
-	cin.tie(nullptr);
-
 	load_data("shuffled_dict.txt");
 
-	string finding_word;
-	if (!getline(cin, finding_word)) return 0;
-	string name = trim(finding_word);
+	string input_word;
+	if (!getline(cin, input_word)) return 0;	// 읽기 실패시 프로그램 종료
+	// getline(cin, input_word): cin에서 '\n'이 나오기 전까지의 문자들을 읽고 `input_word`에 저장
+	//		이때 문자열에는 '\n' 없이 담김
+	string name = trim(input_word);
 
-	int idx = find_word_index(name);
+	int idx = search_word_index(name);
 	if (idx == -1) return 0;
 
 	// 1) 질의어 먼저 출력
@@ -117,7 +116,7 @@ int main() {
 		if ((int)t.size() < 3) continue;          // 길이 3 미만 제외
 		if (contains(printed, t)) continue;       // 중복 제외
 
-		int j = find_word_index(t);
+		int j = search_word_index(t);
 		if (j != -1) {
 			print_word(directory[j]);
 			printed.push_back(t);
