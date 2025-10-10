@@ -39,4 +39,4 @@ int main() {
 
 	it2 = lst.erase(it2);
 	print(lst);
-}
+} 

@@ -113,6 +113,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P_A02_04", "P_A02_04\P_A02_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp11_using_list", "cpp11_using_list\cpp11_using_list.vcxproj", "{1BD7877D-8E2F-4BD7-AB01-0538DE606677}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp12_Music_Library_App", "cpp12_Music_Library_App\cpp12_Music_Library_App.vcxproj", "{E7528A2A-5DB3-4B32-8750-CC663CE22C01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -561,6 +563,14 @@ Global
 		{1BD7877D-8E2F-4BD7-AB01-0538DE606677}.Release|x64.Build.0 = Release|x64
 		{1BD7877D-8E2F-4BD7-AB01-0538DE606677}.Release|x86.ActiveCfg = Release|Win32
 		{1BD7877D-8E2F-4BD7-AB01-0538DE606677}.Release|x86.Build.0 = Release|Win32
+		{E7528A2A-5DB3-4B32-8750-CC663CE22C01}.Debug|x64.ActiveCfg = Debug|x64
+		{E7528A2A-5DB3-4B32-8750-CC663CE22C01}.Debug|x64.Build.0 = Debug|x64
+		{E7528A2A-5DB3-4B32-8750-CC663CE22C01}.Debug|x86.ActiveCfg = Debug|Win32
+		{E7528A2A-5DB3-4B32-8750-CC663CE22C01}.Debug|x86.Build.0 = Debug|Win32
+		{E7528A2A-5DB3-4B32-8750-CC663CE22C01}.Release|x64.ActiveCfg = Release|x64
+		{E7528A2A-5DB3-4B32-8750-CC663CE22C01}.Release|x64.Build.0 = Release|x64
+		{E7528A2A-5DB3-4B32-8750-CC663CE22C01}.Release|x86.ActiveCfg = Release|Win32
+		{E7528A2A-5DB3-4B32-8750-CC663CE22C01}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
