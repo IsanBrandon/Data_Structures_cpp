@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="deque_cppSTL.cpp">
+    <ClCompile Include="custom_comparator.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

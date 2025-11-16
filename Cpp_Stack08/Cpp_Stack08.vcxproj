@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{14e92104-34ad-460e-9760-27b96967aedc}</ProjectGuid>
-    <RootNamespace>CppQueue04</RootNamespace>
+    <ProjectGuid>{55774caa-0884-40ff-8b2a-c97dae92c394}</ProjectGuid>
+    <RootNamespace>CppStack08</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,7 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="deque_cppSTL.cpp" />
+    <ClCompile Include="priority_queue_cppSTL.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="deque_cppSTL.cpp">
+    <ClCompile Include="priority_queue_cppSTL.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
