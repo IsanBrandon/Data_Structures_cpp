@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <queue>
 using namespace std;
 
@@ -41,7 +42,7 @@ int bfs(int sr, int sc) {
 }
 
 int main() {
-	freopen("input1.txt", "r", stdin);	// input1.txt 파일에서 입력 받기
+	ifstream fin("input1.txt"); 	// input1.txt 파일에서 입력 받기
 	cin >> N;
 	for (int i = 0; i < N; i++)
 		for (int j = 0; j < N; j++)

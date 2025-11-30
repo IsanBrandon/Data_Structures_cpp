@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <deque>
 #include <algorithm>
 using namespace std;
@@ -11,7 +12,7 @@ const int INF = 1e9;
 
 int main() {
 
-	freopen("input2.txt", "r", stdin);				// input2.txt 파일에서 입력 받기
+	ifstream fin("input2.txt");  				// input2.txt 파일에서 입력 받기
 
 	// (1) 입력 및 초기화
 	cin >> N;

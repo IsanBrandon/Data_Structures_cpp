@@ -12,6 +12,7 @@
 //cout << count << "\n";
 
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 int N, K;
@@ -27,7 +28,7 @@ int solve(int l, int r) {
 }
 
 int main() {
-	freopen("input.txt", "r", stdin); // input.txt 파일에서 입력 받는다고 가정
+	ifstream fin("input.txt");   // input.txt 파일에서 입력 받는다고 가정
 
 	cin >> N;
 	for (int i = 0; i < N; i++)	cin >> a[i];
