@@ -8,7 +8,6 @@ class Stack {
 public:
     void push(int x) { a[top++] = x; }
     int pop() { return a[--top]; }
-    bool empty() { return top == 0; }
 };
 
 int main() {
@@ -23,9 +22,8 @@ int main() {
             cout << id++;
         }
         else if (c == ')') {
-            int x = st.pop();
             if (out++) cout << ' ';
-            cout << x;
+            cout << st.pop();
         }
     }
     cout << '\n';

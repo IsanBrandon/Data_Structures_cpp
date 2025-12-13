@@ -2,32 +2,32 @@
 using namespace std;
 
 class Stack {
-    int a[100000];
-    int topIdx;
+    int a[100000];  // N 최대에 맞게 충분히 크게
+    int top = 0;
 public:
-    Stack() { topIdx = 0; }
-    void push(int x) { a[topIdx++] = x; }
-    int pop() { return a[--topIdx]; }
-    int top() { return a[topIdx - 1]; }
-    bool empty() { return topIdx == 0; }
-    int size() { return topIdx; }
+    void push(int x) { a[top++] = x; }
+    int pop() { return a[--top]; }
+    int peek() { return a[top - 1]; }
+    bool empty() { return top == 0; }
+    int size() { return top; }
 };
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    int N; cin >> N;
 
-    int N, x;
-    cin >> N;
     Stack st;
+    int out = 0;
 
     for (int i = 0; i < N; i++) {
-        cin >> x;
-        while (!st.empty() && st.top() <= x)
+        int x; cin >> x;
+
+        while (!st.empty() && st.peek() <= x)
             st.pop();
+
         st.push(x);
+
+        if (out++) cout << ' ';
         cout << st.size();
-        if (i != N - 1) cout << ' ';
     }
     cout << '\n';
 }
